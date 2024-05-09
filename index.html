@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel = "stylesheet" href="css/styles.css" /> 
+    <link rel = "stylesheet" href="mediaqueries.css" /> 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+
+
+<body>
+   
+    <nav id="desktop-nav">
+        <div class ="logo"> Merzia Jilani</div> 
+    <div> 
+        <ul class="nav-links"> 
+            <li> <a href="#profile"> About </a></li>
+            <li> <a href="#projects">  Projects</a></li>
+           
+            <li> <a href="#contact"> Contact </a></li>
+            
+        </ul>
+    </div></nav>
+
+
+    <nav id = "hamburger-nav"> 
+        <div class ="logo"> Merzia Jilani</div> 
+        <div class="hamburger-menu"> 
+            <div class="hamburger-icon" onclick="toggleMenu()"> 
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+        
+            
+            </div>
+            <fiv class="menu-links"> 
+                <li> <a href="#about" onclick="toggleMenu()"> About </a></li>
+                <li> <a href="#casestudy" onclick="toggleMenu()">  Case Studies </a></li>
+                <li> <a href="#contact" onclick="toggleMenu()"> Contact </a></li>
+            
+
+
+
+
+            </fiv>
+        </div>
+
+
+
+
+
+    </nav>
+
+    <section id="profile"> 
+        <div class="section_pic-container">
+     
+        <img src = "assests/profile.jpg" alt="MJ profile picture" > 
+
+        </div>
+        <div class="section_text"> 
+            <h1 class="title"> Merzia Jilani</h1>
+           
+            <!-- <p class="section_text_p1">Hi I'm Merzia, a Product Manager  </p> -->
+            <div class="section_text_p1">
+                <p><span class="typedText"></span> 
+                    <!-- <span class="typedText">Product Manager </span>
+                    <span class="typedText">Consultant </span> 
+                    <span class="typedText">Author </span> 
+                    <span class="typedText">South Asian </span>   </p> -->
+            </div>
+            <p class="section_text_p2"> I'm dedicated to  <span class="highlight-color"> driving transformations </span> that merge innovation, strategy and design with social consciousness. I develop products to solve problems unique to South Asian women. </p>
+
+            <div class = "btn-container"> 
+                <button class="btn btn-color-2" onclick="window.open('assests/resume.pdf')">RESUME</button>
+            </div>
+             
+
+            </div>
+    </section> 
+
+
+
+    <section id="projects">
+        <div class="project-card" onclick="window.location.href='projects1.html';">
+            <img src="assests/kneadprof.jpeg" alt="Project 1 Image" class="project-image">
+            <h2>Knead Doughnuts</h2>
+            <p>Redesigning Knead Doughnuts webpage to increase user engagement and accessibility </p>
+        </div>
+        <div class="project-card" onclick="window.location.href='projects2.html';">
+            <img src="assests/astercare_logo.jpeg" alt="Project 1 Image" class="project-image">
+            <h2>Aster Assistant</h2>
+            <p>Working with Aster to design and streamline their healthcare mobile interface for pregnant women</p>
+        </div>
+        <div class="project-card" onclick="window.location.href='projects3.html';">
+            <img src="assests/heart.png" alt="Project 1 Image" class="project-image">
+            <h2>Dating Development</h2>
+            <p>Creating a dating profile aggregator to filter and sort through preferred features</p>
+        </div>
+       
+    </section>
+
+    <section id="contact"> 
+        <p class="section_text_p2"> Get in Touch  </p>
+        <h1 class="title1">Contact Me </h1>
+        <div class="contact-info-upper-container"> 
+            <div class="contact-info-container"> 
+                <img src="assests/mail-icon.png" alt="mail-icon" class="icon contact-icon"/> 
+                <p><a href="mailto:syeda_merzia_jilani@brown.edu"> syeda_merzia_jilani@brown.edu</a></p>
+        
+                </div>
+        </div>
+        <div class="contact-info-container"> 
+            <img src="assests/linkedin.png" alt="link-icon" class="icon contact-icon"/> 
+            <p><a href="https://pk.linkedin.com/in/merzia-jilani-51ab441b2"> Linkedin</a></p>
+    
+            </div>
+    </div>
+
+
+
+    </section> 
+
+
+    <script>
+        typing();
+
+        function typing() {
+            new Typed(".typedText",{
+    strings : ["Product Manager","Consultant","Author","South Asian"],
+    loop : true,
+    typeSpeed : 100, 
+    backSpeed : 80,
+    backDelay : 2000
+ })
+}</script>
+    
+
+
+ 
+  
+</body>
+</html>
